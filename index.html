@@ -1,108 +1,151 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
-    <meta name="generator" content="Hugo 0.122.0" />
-    <title>Buttons · Bootstrap v5.3</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="col-lg-8 mx-auto p-4 py-md-5">
-      <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
-        <h1 class="text-body-emphasis fw-bolder">This.. is... Bootstrap!</h1>
-      </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="An alternative simple and elegant Bootstrap way!" />
+  <meta name="author" content="Marco Gargano" />
+  <meta name="generator" content="Hugo 0.122.0" />
+  <title>Simplify Bootstrap - v. 0.1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <main>
-        <div class="row">
-          <div class="col-9">
-            <h4>👋 Ciao! <br />Sono appassionato di front-end e utilizzo Bootstrap da tanti anni.</h4>
-            <p class="mb-1">Ritengo che Bootstrap sia un <strong>framework CSS completo</strong> e sopratutto <strong>pronto all'uso</strong>.</p>
-            <p>Oltre che per progetti personali di piccole dimensioni, utilizzo Bootstrap anche in ambienti lavorativi più strutturati; talvolta viene compilato e spesso viene utilizzata una CDN.</p>
+<body>
+  <div class="col-lg-8 mx-auto p-4 py-md-5">
+    <header class="pb-3 mb-5 border-bottom">
+      <h1 class="text-body-emphasis fw-bolder"><a href="#">This.. is... Bootstrap!</a></h1>
+      <h5>Semplice ed elegante abito sartoriale. </h5>
+    </header>
 
-            <h4>Perché un'altra fork di Bootstrap??</h4>
-            <p class="mb-1">Secondo me e secondo i recenti sviluppi che hanno interessato lo sviluppo CSS, è possibile utilizzare Bootstrap senza dover compilare il codice; pur mantenendo la possibilità di personalizzare facilmente alcuni parametri. Raggiungendo risultati semplici ed eleganti.</p>
-            <p><strong>Le varibili native CSS hanno rivoluzionato anche il mio approccio.</strong></p>
+    <main>
+      <div class="row">
+        <div class="col-9">
+          <h4>👋 Ciao! Mi chiamo Marco, <br />sono appassionato di front-end e utilizzo Bootstrap da tanti anni.</h4>
+          <p class="mb-1">Ritengo che Bootstrap sia un <strong>framework CSS completo</strong> e sopratutto
+            <strong>pronto all'uso</strong>.</p>
+          <p class="mb-5">Oltre che per progetti personali di piccole dimensioni, utilizzo Bootstrap anche in ambienti
+            lavorativi più strutturati; talvolta viene compilato e spesso viene utilizzata una CDN.</p>
 
-            <h4>Il mio approccio?!</h4>
-            <p class="mb-1">Per uniformare e centralizzare l'utilizzo del colore primario, per esempio, questo potrà esser dichiarato e tutte le sue applicazioni ne verrano interessate. </p>
-            <p class="mb-2">
-              <pre><code class="bg-warning bg-opacity-25">--bs-primary: #352f36;
---bs-secondary: #6c757d;
---bs-success: #198754;</code></pre>
+          <h4>🤌 Perché un'altra fork di Bootstrap??</h4>
+          <p class="mb-5">Secondo me e secondo i recenti sviluppi che hanno interessato lo sviluppo CSS, è possibile
+            utilizzare Bootstrap senza dover compilare il codice; pur mantenendo la possibilità di personalizzare
+            facilmente alcuni parametri. Raggiungendo risultati semplici ed eleganti. <strong>Le varibili native CSS
+              hanno rivoluzionato anche il mio approccio.</strong></p>
+
+          <h4>☝️ Il mio approccio!</h4>
+          <p class="mb-1">Per uniformare e centralizzare l'utilizzo del colore primario, per esempio, questo potrà esser
+            dichiarato e tutte le sue applicazioni ne verrano interessate. </p>
+          <p class="mb-5">Tutto ciò ce ti servirà impostare per un rapida personalizzazione lo trovi subito all'interno
+            del file CSS. Senza dover compilare nulla e pronto all'anteprima. <strong>Poche e chiare variabili per tanti
+              utilizzi.</strong> </p>
+          <p class="mb-2">
+          <pre class="bg-warning bg-opacity-10 p-3 rounded-5"><code>@import url("font/font.css");
+
+:root {
+  /* --- Set your font family --- */
+  --bs-font-sans-serif: "Georama", sans-serif;
+  --bs-body-font-size: 0.875rem;
+
+  /* --- Set your primary and secondary color --- */
+  --bs-primary: #9d33e7;
+  --bs-primary-rgb: 157, 51, 231;
+  --bs-secondary: #91abc1;
+  --bs-secondary-rgb: 145, 171, 193;
+
+  /* --- Set your border-radius --- */
+  --bs-border-radius: 0.25rem;
+}</code></pre>
           </p>
 
-            <div class="my-4">
-              <a href="style.css" download="" class="btn btn-primary">Get the CSS file</a>
-            </div>
-            <p class="mb-5">
-              <small>Basato su Bootstrap v. 5.3 - Ispirato a <a href="https://ui.shadcn.com/">Shadcn UI</a></small>
-            </p>
+          <div class="my-4">
+            <a href="style.css" download="" class="btn btn-primary">Get the CSS file</a>
           </div>
+          <p class="mb-5">
+            <small>Basato su Bootstrap v. 5.3 2024</small>
+          </p>
         </div>
+      </div>
 
-        <hr class="col-3 col-md-2 mb-5" />
+      <hr class="col-3 col-md-2 mb-5" />
 
-        <div class="row g-5">
-          <div class="col-md-2">
-            <ul class="list ps-3 py-3 sticky-top">
-              <li>
-                <a class="icon-link mb-1" href="#s-button"> Button </a>
-              </li>
-
-              <li>
-                <a class="icon-link mb-1" href="#s-badge"> Badge </a>
-              </li>
-              <li>
-                <a class="icon-link mb-1" href="#s-dropdown"> Dropdown </a>
-              </li>
-              <li>
-                <a class="icon-link mb-1" href="#s-nav"> Nav </a>
-              </li>
-              <li>
-                <a class="icon-link mb-1" href="#s-modal"> Modal </a>
-              </li>
-              <li>
-                <a class="icon-link mb-1" href="#s-accordion"> Accordion </a>
-              </li>
-              <li>
-                <a class="icon-link mb-1" href="#s-alert"> Alert </a>
-              </li>
-              <li>
-                <a class="icon-link mb-1" href="#s-table"> Table </a>
-              </li>
-              <li>
-                <a class="icon-link mb-1" href="#s-form"> Form </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <h2 class="text-body-emphasis">Component example</h2>
-            <p>Belowe you can see this CSS working on main Bootstrap component.</p>
-            <div id="inc-button"></div>
-            <div id="inc-component"></div>
-            <div id="inc-alert"></div>
-            <div id="inc-table"></div>
-            <div id="inc-form"></div>
-          </div>
+      <div class="row g-5">
+        <div class="col-md-2">
+          <ul class="list ps-3 py-3 sticky-top">
+            <li>
+              <a class="icon-link mb-1" href="#s-button">Button</a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="#s-badge">Badge</a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="#s-dropdown">Dropdown</a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="#s-nav">Nav</a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="#s-navbar">Navbar</a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="#s-tab">Tab</a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="#s-modal">Modal</a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="#s-offcanvas">Offcanvas</a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="#s-accordion">Accordion</a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="#s-alert">Alert</a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="#s-table">Table</a>
+            </li>
+            <li>
+              <a class="icon-link mb-1" href="#s-form">Form</a>
+            </li>
+          </ul>
         </div>
-      </main>
-      <footer class="pt-5 my-5 text-body-secondary border-top">Created by Marco Gargano with ☮️ & 💜 &middot; &copy; 2024</footer>
-    </div>
+        <div class="col">
+          <h2 class="text-body-emphasis">Component example</h2>
+          <p>Belowe you can see this CSS working on main Bootstrap component.</p>
+          <div id="inc-button"></div>
+          <div id="inc-nav"></div>
+          <div id="inc-tab"></div>
+          <div id="inc-modal"></div>
+          <div id="inc-offcanvas"></div>
+          <div id="inc-accordion"></div>
+          <div id="inc-alert"></div>
+          <div id="inc-table"></div>
+          <div id="inc-form"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="pt-5 my-5 text-body-secondary border-top">Created by Marco Gargano with ☮️ & 💜 &middot; &copy; 2024
+    </footer>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#inc-button").load("inc/button.html");
-        $("#inc-form").load("inc/form.html");
-        $("#inc-alert").load("inc/alert.html");
-        $("#inc-table").load("inc/table.html");
-        $("#inc-component").load("inc/component.html");
-      });
-    </script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#inc-nav").load("inc/nav.html");
+      $("#inc-tab").load("inc/tab.html");
+      $("#inc-button").load("inc/button.html");
+      $("#inc-form").load("inc/form.html");
+      $("#inc-alert").load("inc/alert.html");
+      $("#inc-table").load("inc/table.html");
+      $("#inc-accordion").load("inc/accordion.html");
+      $("#inc-offcanvas").load("inc/offcanvas.html");
+      $("#inc-modal").load("inc/modal.html");
+    });
+  </script>
+</body>
+
 </html>
