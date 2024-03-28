@@ -10,17 +10,19 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     [id^=s-] {
-      padding-top: 5rem !important;
+      padding-top: 7rem !important;
     }
   </style>
 </head>
 
 <body>
   <div class="col-lg-8 mx-auto p-4 py-md-5">
-    <header class="pb-3 mb-5 border-bottom">
-      <h1 class="text-body-emphasis fw-bolder"><a href="#">This.. is... Bootstrap!</a></h1>
-      <h5>Semplice ed elegante abito sartoriale. </h5>
+    <header class="my-5 pb-5">
+      <h1 class="text-body-emphasis fw-bolder"><a class="link-primary" href="/">This.. is... Bootstrap!</a></h1>
+      <h5>Ora semplice ed elegante... </h5>
     </header>
+
+    <hr class="border-primary border-2 opacity-100 col-md-2 my-5 pb-5">
 
     <main>
       <div class="row">
@@ -63,31 +65,44 @@
 }</code></pre>
           </p>
 
-          <div class="my-4">
-            <a href="style.css" download="" class="btn btn-primary">Get the CSS file</a>
+          <div class="mt-3 mb-5">
+            <div class="float-end mb-3">
+              <small>Basato su Bootstrap v. 5.3 2024</small>
+            </div>
+            <a href="style.css" download="" class="btn btn-outline-primary">Scarica il file CSS</a>
           </div>
 
-          <p class="mb-5">
-            <small>Basato su Bootstrap v. 5.3 2024</small>
-          </p>
         </div>
       </div>
 
+      <div class="row">
+        <div class="col">
+          <h3>Crea direttamente il tuo file personalizzato:</h3>
+        </div>
+      </div>
       <div class="row sticky-bottom sticky-top z-3">
         <div class="col">
-          <div class="my-2 p-3 bg-light rounded-5 shadow-lg">
+          <div class="my-3 p-3 bg-light border border-primary border-2 rounded-5 shadow-lg">
             <form class="" method="post" action="">
-              <div class="d-sm-flex flex-sm-row align-items-center gap-4">
-                <h5 class="d-flex align-items-center flex-fill mb-sm-0">Crea il tuo stile personalizzato</h5>
-                <label class="d-flex align-items-center form-label mb-sm-0" for="primary-color">Primary
-                  <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
+              <div class="d-sm-flex flex-sm-row align-items-center justify-content-between gap-4">
+                <h5 class="d-flex align-items-center mb-sm-0 ms-2">🙌 </h5>
+                <label class="d-flex align-items-center form-label mb-sm-0" for="primary-color">Primary: 
+                  <input type="color" class="float-start form-control form-control-color form-control-sm ms-1 bg-opacity-25"
                     id="primary-color" name="primary-color" value="#9d33e7" />
                 </label>
-                <label class="d-flex align-items-center form-label mb-sm-0" for="secondary-color">Secondary
+                <label class="d-flex align-items-center form-label mb-sm-0" for="secondary-color">Secondary: 
                   <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
                     id="secondary-color" name="secondary-color" value="#91abc1" />
                 </label>
-                <button id="download-btn" class="btn btn-outline-primary">Scarica .css</button>
+                <label class="d-flex align-items-center form-label mb-sm-0" for="border-radius">Border radius: 
+                  <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
+                    id="border-radius" name="border-radius" value="0.25rem" placeholder="0.25rem" style="width: 80px;" />
+                </label>
+                <label class="d-flex align-items-center form-label mb-sm-0" for="font-size">Font size: 
+                  <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
+                    id="font-size" name="font-size" value="0.875rem" placeholder="0.875rem" style="width: 80px;" />
+                </label>
+                <button id="download-btn" class="btn btn-primary text-nowrap">Scarica .css</button>
               </div>
             </form>
           </div>
@@ -96,8 +111,8 @@
 
       <div class="row g-5">
         <div class="col-sm-3">
-          <div class="py-3 sticky-top">
-            <hr class="col-1 mt-5 mt-4 opacity-0" />
+          <div class="py-3 sticky-top z-2">
+            <hr class="col-1 my-5 opacity-0" />
 
             <ul class="list ps-3">
               <li>
@@ -144,7 +159,7 @@
             <hr class="col-3 my-4" />
 
             <form class="" method="post" action="">
-              <label class="d-flex align-items-center form-label" for="picker">Try to change primary:</label>
+              <label class="d-flex align-items-center form-label" for="picker">🤲 Prova un altro primary: </label>
               <div class="input-group" style="max-width: 110px;">
               <input type="color" class="form-control form-control-color form-control-sm" id="picker" style="max-width: 30px;"
               value="#9d33e7" />
@@ -166,7 +181,7 @@
           </div>
         </div>
         <div class="col-sm-9">
-          <h2 class="text-body-emphasis pt-5 mt-4">Component esempio</h2>
+          <h2 class="text-body-emphasis pt-5 mt-4">Esempi di Component</h2>
           <p>Di seguto puoi trovare alcuni esempi dei componenti Bootstrap con il nuovo stile.</p>
 
           <div id="inc-button"></div>
