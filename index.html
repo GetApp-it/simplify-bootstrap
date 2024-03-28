@@ -79,7 +79,6 @@
             <form class="" method="post" action="">
               <div class="d-sm-flex flex-sm-row align-items-center gap-4">
                 <h5 class="d-flex align-items-center flex-fill mb-sm-0">Crea il tuo stile personalizzato</h5>
-                <p class="d-flex align-items-center pb-0">Seleziona i colori e scarica il file .css</p>
                 <label class="d-flex align-items-center form-label mb-sm-0" for="primary-color">Primary
                   <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
                     id="primary-color" name="primary-color" value="#9d33e7" />
@@ -88,7 +87,7 @@
                   <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
                     id="secondary-color" name="secondary-color" value="#91abc1" />
                 </label>
-                <button id="download-btn flex-fill" class="btn btn-outline-primary">Download</button>
+                <button id="download-btn" class="btn btn-outline-primary">Scarica .css</button>
               </div>
             </form>
           </div>
@@ -192,7 +191,8 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  
+  <script src="script.js"></script>
+
   <script>
     $(document).ready(function () {
       $("#picker").on("change", function () {
@@ -219,7 +219,6 @@
     });
     
     </script>
-    <script src="script.js"></script>
 </body>
 
 </html>
