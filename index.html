@@ -8,6 +8,11 @@
   <meta name="author" content="Marco Gargano" />
   <title>Simplify Bootstrap - v. 0.1</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    [id^=s-] {
+      padding-top: 5rem !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -19,7 +24,7 @@
 
     <main>
       <div class="row">
-        <div class="col-9">
+        <div class="col-sm-9">
           <h4>👋 Ciao! Mi chiamo Marco, <br />sono appassionato di front-end e utilizzo Bootstrap da tanti anni.</h4>
           <p class="mb-1">Ritengo che Bootstrap sia un <strong>framework CSS completo</strong> e sopratutto
             <strong>pronto all'uso</strong>.
@@ -61,17 +66,40 @@
           <div class="my-4">
             <a href="style.css" download="" class="btn btn-primary">Get the CSS file</a>
           </div>
+
           <p class="mb-5">
             <small>Basato su Bootstrap v. 5.3 2024</small>
           </p>
         </div>
       </div>
 
-      <hr class="col-3 col-md-2 mb-5" />
+      <div class="row sticky-bottom sticky-top z-3">
+        <div class="col">
+          <div class="my-2 p-3 bg-light rounded-5 shadow-lg">
+            <form class="" method="post" action="">
+              <div class="d-sm-flex flex-sm-row align-items-center gap-4">
+                <h5 class="d-flex align-items-center flex-fill mb-sm-0">Crea il tuo stile personalizzato</h5>
+                <p class="d-flex align-items-center pb-0">Seleziona i colori e scarica il file .css</p>
+                <label class="d-flex align-items-center form-label mb-sm-0" for="primary-color">Primary
+                  <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
+                    id="primary-color" name="primary-color" value="#9d33e7" />
+                </label>
+                <label class="d-flex align-items-center form-label mb-sm-0" for="secondary-color">Secondary
+                  <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
+                    id="secondary-color" name="secondary-color" value="#91abc1" />
+                </label>
+                <button id="download-btn flex-fill" class="btn btn-outline-primary">Download</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
       <div class="row g-5">
-        <div class="col-md-2">
+        <div class="col-sm-3">
           <div class="py-3 sticky-top">
+            <hr class="col-1 mt-5 mt-4 opacity-0" />
+
             <ul class="list ps-3">
               <li>
                 <a class="icon-link mb-1" href="#s-button">Button</a>
@@ -104,6 +132,9 @@
                 <a class="icon-link mb-1" href="#s-alert">Alert</a>
               </li>
               <li>
+                <a class="icon-link mb-1" href="#s-image">Image</a>
+              </li>
+              <li>
                 <a class="icon-link mb-1" href="#s-table">Table</a>
               </li>
               <li>
@@ -114,7 +145,12 @@
             <hr class="col-3 my-4" />
 
             <form class="" method="post" action="">
-              <label class="d-flex align-items-center form-label" for="picker">Change <input type="color" class="float-start form-control form-control-color form-control-sm ms-1" id="picker" value="#9d33e7" /></label>
+              <label class="d-flex align-items-center form-label" for="picker">Try to change primary:</label>
+              <div class="input-group" style="max-width: 110px;">
+              <input type="color" class="form-control form-control-color form-control-sm" id="picker" style="max-width: 30px;"
+              value="#9d33e7" />
+              <input class="form-control form-control-sm" type="text" value="#9d33e7" id="picker-code" disabled readonly>
+              </div>
             </form>
 
             <div id="picker-style">
@@ -130,9 +166,10 @@
 
           </div>
         </div>
-        <div class="col">
-          <h2 class="text-body-emphasis">Component example</h2>
-          <p>Belowe you can see this CSS working on main Bootstrap component.</p>
+        <div class="col-sm-9">
+          <h2 class="text-body-emphasis pt-5 mt-4">Component esempio</h2>
+          <p>Di seguto puoi trovare alcuni esempi dei componenti Bootstrap con il nuovo stile.</p>
+
           <div id="inc-button"></div>
           <div id="inc-nav"></div>
           <div id="inc-tab"></div>
@@ -140,33 +177,35 @@
           <div id="inc-offcanvas"></div>
           <div id="inc-accordion"></div>
           <div id="inc-alert"></div>
+          <div id="inc-image"></div>
           <div id="inc-table"></div>
           <div id="inc-form"></div>
         </div>
       </div>
     </main>
-    <footer class="pt-5 my-5 text-body-secondary border-top">Created by Marco Gargano with ☮️ & 💜 &middot; &copy; 2024</footer>
+
+    <footer class="pt-5 my-5 text-body-secondary border-top">Created by Marco Gargano with ☮️ & 💜 &middot; &copy; 2024
+    </footer>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
   <script>
     $(document).ready(function () {
-
-      $("#picker").on("change", function() {
+      $("#picker").on("change", function () {
         var color = $("#picker").val();
         var hex = [
-          parseInt(color.substr(-6,2),16),
-          parseInt(color.substr(-4,2),16),
-          parseInt(color.substr(-2),16)
-      ];
-        $("#picker-style").html("<style> :root { --bs-primary: " + color  + "; --bs-primary-rgb: "+hex+"; } </style>");
+          parseInt(color.substr(-6, 2), 16),
+          parseInt(color.substr(-4, 2), 16),
+          parseInt(color.substr(-2), 16)
+        ];
+        $("#picker-style").html("<style> :root { --bs-primary: " + color + "; --bs-primary-rgb: " + hex + "; } </style>");
+        $('#picker-code').val(color);
       });
-
-
-
+      
       $("#inc-nav").load("inc/nav.html");
       $("#inc-tab").load("inc/tab.html");
       $("#inc-button").load("inc/button.html");
@@ -176,8 +215,11 @@
       $("#inc-accordion").load("inc/accordion.html");
       $("#inc-offcanvas").load("inc/offcanvas.html");
       $("#inc-modal").load("inc/modal.html");
+      $("#inc-image").load("inc/image.html");
     });
-  </script>
+    
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
