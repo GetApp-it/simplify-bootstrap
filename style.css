@@ -17,8 +17,8 @@
   /* --- Set your primary and secondary color --- */
   --bs-primary: #9d33e7;
   --bs-primary-rgb: 157, 51, 231;
-  --bs-secondary: #91abc1;
-  --bs-secondary-rgb: 145, 171, 193;
+  --bs-secondary: #5592eb;
+  --bs-secondary-rgb: 85, 146, 235;
   /* --- Set your border-radius --- */
   --bs-border-radius: 0.25rem;
 }
@@ -3429,7 +3429,7 @@ textarea.form-control.is-invalid {
   --bs-btn-padding-x: 0.8rem;
   --bs-btn-padding-y: 0.3rem;
   --bs-btn-font-family: var(--bs-body-font-family);
-  --bs-btn-font-size: 0.875rem;
+  --bs-btn-font-size: var(--bs-body-font-size);
   --bs-btn-font-weight: 500;
   --bs-btn-line-height: 1.25rem;
   --bs-btn-color: var(--bs-body-color);
@@ -3917,7 +3917,7 @@ fieldset:disabled .btn {
   --bs-dropdown-color: var(--bs-body-color);
   --bs-dropdown-bg: var(--bs-body-bg);
   --bs-dropdown-border-color: var(--bs-border-color-translucent);
-  --bs-dropdown-border-radius: var(--bs-border-radius);
+  --bs-dropdown-border-radius: 0.25rem;
   --bs-dropdown-border-width: var(--bs-border-width);
   --bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
@@ -4375,7 +4375,7 @@ fieldset:disabled .btn {
   color: var(--bs-nav-link-color);
   text-decoration: none;
   border-color: rgba(var(--bs-primary-rgb), 0.1);
-  border-radius: var(--bs-border-radius);
+  border-radius: 0.25rem;
   border: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4407,7 +4407,7 @@ fieldset:disabled .btn {
 .nav-tabs {
   --bs-nav-tabs-border-width: var(--bs-border-width);
   --bs-nav-tabs-border-color: var(--bs-border-color);
-  --bs-nav-tabs-border-radius: var(--bs-border-radius);
+  --bs-nav-tabs-border-radius: 0.25rem;
   --bs-nav-tabs-link-hover-border-color: var(--bs-secondary-bg) var(--bs-secondary-bg) var(--bs-border-color);
   --bs-nav-tabs-link-active-color: var(--bs-emphasis-color);
   --bs-nav-tabs-link-active-bg: var(--bs-body-bg);
