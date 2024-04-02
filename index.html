@@ -60,8 +60,8 @@
   /* --- Set your primary and secondary color --- */
   --bs-primary: #9d33e7;
   --bs-primary-rgb: 157, 51, 231;
-  --bs-secondary: #5592eb;
-  --bs-secondary-rgb: 85, 146, 235;
+  --bs-secondary: #103875;
+  --bs-secondary-rgb: 16, 56, 117;
 
   /* --- Set your border-radius --- */
   --bs-border-radius: 0.25rem;
@@ -101,16 +101,15 @@
                     <input type="color"
                       class="float-start form-control form-control-color form-control-sm ms-1 bg-opacity-25"
                       id="primary-color" name="primary-color" value="#9d33e7" style="max-width: 30px;" />
-                    <input class="form-control form-control-sm" type="text" value="#9d33e7" id="primary-color-code">
+                    <input class="form-control form-control-sm" type="text" value="#9d33e7" id="primary-color-code" disabled readonly>
                   </label>
                 </div>
                 <div class="col-2">
                   <p class="mb-1 fw-bold text-secondary"><small>Secondary</small></p>
                   <label class="d-flex align-items-center input-group form-label mb-sm-0" for="secondary-color">
                     <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
-                      id="secondary-color" name="secondary-color" value="#5592eb" style="max-width: 30px;" />
-                    <input class="form-control form-control-sm" type="text" value="#5592eb" id="secondary-color-code"
-                      disabled readonly>
+                      id="secondary-color" name="secondary-color" value="#103875" style="max-width: 30px;" />
+                    <input class="form-control form-control-sm" type="text" value="#103875" id="secondary-color-code" disabled readonly>
                   </label>
                 </div>
                 <div class="col-auto">
@@ -128,19 +127,19 @@
                       style="width: 80px;" />
                   </label>
                 </div>
-                <div class="col-auto">
-                  <p class="mb-1 fw-bold text-secondary"><small>Click & use</small></p>
-                  <a href="#download" id="download-btn" class="btn btn-primary text-nowrap">Scarica .css</a>
-                </div>
               </div>
             </form>
+            <div class="col-auto">
+              <p class="mb-1 fw-bold text-secondary"><small>Click & use</small></p>
+              <a href="#download" id="download-btn" class="btn btn-primary text-nowrap">Scarica .css</a>
+            </div>
             <div id="custom-style">
               <style>
                 :root {
                   --bs-primary: #9d33e7;
                   --bs-primary-rgb: 157, 51, 231;
-                  --bs-secondary: #5592eb;
-                  --bs-secondary-rgb: 85, 146, 235;
+                  --bs-secondary: #103875;
+                  --bs-secondary-rgb: 16, 56, 117;
                 }
               </style>
             </div>
@@ -237,6 +236,7 @@
           parseInt(primaryColor.substr(-2), 16)
         ];
         var secondaryColor = $("#secondary-color").val();
+        $('#secondary-color-code').val(secondaryColor);
         var secondaryColorHex = [
           parseInt(secondaryColor.substr(-6, 2), 16),
           parseInt(secondaryColor.substr(-4, 2), 16),

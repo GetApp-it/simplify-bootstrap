@@ -1,5 +1,5 @@
 const DEFAULT_PRIMARY_COLOR = '#9d33e7';
-const DEFAULT_SECONDARY_COLOR = '#91abc1';
+const DEFAULT_SECONDARY_COLOR = '#103875';
 const CSS_FILENAME = 'style.css';
 const CSS_TEMPLATE_URL = '/style-template.css';
 
