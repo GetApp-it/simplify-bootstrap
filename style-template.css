@@ -2,14 +2,14 @@
 
 :root {
   /* --- Set your font family --- */
-  --bs-font-sans-serif: "Georama", sans-serif;
+  --bs-font-sans-serif: {{FONT_FAMILY}};
   --bs-body-font-size: {{FONT_SIZE}};
 
   /* --- Set your primary and secondary color --- */
   --bs-primary: {{PRIMARY_COLOR}};
-  --bs-primary-rgb: 157, 51, 231;
+  --bs-primary-rgb: {{PRIMARY_COLOR_RGB}};
   --bs-secondary: {{SECONDARY_COLOR}};
-  --bs-secondary-rgb: 145, 171, 193;
+  --bs-secondary-rgb: {{SECONDARY_COLOR_RGB}};
 
   /* --- Set your border-radius --- */
   --bs-border-radius: {{BORDER_RADIUS}};
