@@ -6,10 +6,7 @@ const CSS_TEMPLATE_URL = '/style-template.css';
 
 function download(filename, text) {
   var element = document.createElement('a');
-  element.setAttribute(
-    'href',
-    'data:text/plain;charset=utf-8,' + encodeURIComponent(text)
-  );
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
   element.setAttribute('download', filename);
   element.style.display = 'none';
   document.body.appendChild(element);
@@ -76,14 +73,7 @@ async function handleDownloadButtonClick(event) {
 
 function replaceCustomSettings(
   template,
-  {
-    primaryColor,
-    primaryColorRgb,
-    secondaryColor,
-    secondaryColorRgb,
-    borderRadius,
-    fontSize,
-  }
+  { primaryColor, primaryColorRgb, secondaryColor, secondaryColorRgb, borderRadius, fontSize }
 ) {
   return template
     .replace(/{{PRIMARY_COLOR}}/g, primaryColor)
@@ -107,6 +97,9 @@ function handleCustomStyleChange() {
     }
     </style>`;
   const customCss = replaceCustomSettings(cssTemplate, customSettings);
+
+  document.getElementById('primary-color-code').value = customSettings.primaryColor;
+  document.getElementById('secondary-color-code').value = customSettings.secondaryColor;
   document.getElementById('custom-style').innerHTML = customCss;
 }
 
@@ -132,11 +125,7 @@ window.onload = () => {
   includePageElement('inc-image', '/inc/image.html');
 
   // bindings
-  document
-    .getElementById('download-btn')
-    .addEventListener('click', handleDownloadButtonClick);
+  document.getElementById('download-btn').addEventListener('click', handleDownloadButtonClick);
 
-  document
-    .getElementById('custom')
-    .addEventListener('change', handleCustomStyleChange);
+  document.getElementById('custom').addEventListener('change', handleCustomStyleChange);
 };
