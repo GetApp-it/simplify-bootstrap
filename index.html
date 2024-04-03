@@ -47,6 +47,91 @@
         </div>
       </div>
     </div>
+    <div class="container sticky-bottom sticky-top z-3">
+      <div class="col p-2 mx-auto">
+        <div class="p-3 bg-light border border-primary border-2 rounded-5 shadow-lg">
+          <form id="custom" class="" method="post" action="">
+            <div class="row d-flex justify-content-evenly">
+              <div class="col d-none d-sm-block">
+                <p class="mb-1 fw-bold text-primary"><small>Real time</small></p>
+                <h5 class="text-secondary">Prova 👉</h5>
+              </div>
+              <div class="col-md-auto col-6">
+                <p class="mb-1 fw-bold text-secondary"><small>Primary</small></p>
+                <label class="d-flex align-items-center input-group form-label mb-sm-0" for="primary-color">
+                  <input type="color"
+                    class="float-start form-control form-control-color form-control-sm ms-1 bg-opacity-25"
+                    id="primary-color" name="primary-color" value="#9d33e7" style="max-width: 30px;" />
+                  <input class="form-control form-control-sm" type="text" value="#9d33e7" id="primary-color-code"
+                    style="max-width: 95px;" disabled readonly>
+                </label>
+              </div>
+              <div class="col-sm-auto col-6">
+                <p class="mb-1 fw-bold text-secondary"><small>Secondary</small></p>
+                <label class="d-flex align-items-center input-group form-label mb-sm-0" for="secondary-color">
+                  <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
+                    id="secondary-color" name="secondary-color" value="#103875" style="max-width: 30px;" />
+                  <input class="form-control form-control-sm" type="text" value="#103875" id="secondary-color-code"
+                    style="max-width: 95px;" disabled readonly>
+                </label>
+              </div>
+              <div class="col-sm-auto col-6">
+                <p class="mb-1 fw-bold text-secondary"><small>Font color</small></p>
+                <label class="d-flex align-items-center input-group form-label mb-sm-0" for="font-color">
+                  <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
+                    id="font-color" name="font-color" value="#212529" style="max-width: 30px;" />
+                  <input class="form-control form-control-sm" type="text" value="#212529" id="font-color-code"
+                    style="max-width: 95px;" disabled readonly>
+                </label>
+              </div>
+              <div class="col-sm-auto col-6">
+                <p class="mb-1 fw-bold text-secondary"><small>Link color</small></p>
+                <label class="d-flex align-items-center input-group form-label mb-sm-0" for="link-color">
+                  <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
+                    id="link-color" name="link-color" value="#FFFFFF" style="max-width: 30px;" />
+                  <input class="form-control form-control-sm" type="text" value="#FFFFFF" id="link-color-code"
+                    style="max-width: 95px;" disabled readonly>
+                </label>
+              </div>
+              <div class="col-sm-auto col-6">
+                <p class="mb-1 fw-bold text-secondary"><small>Font size</small></p>
+                <label class="d-flex align-items-center form-label mb-sm-0" for="font-size">
+                  <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
+                    id="font-size" name="font-size" value="0.875rem" placeholder="0.875rem" style="width: 80px;" />
+                </label>
+              </div>
+              <div class="col-sm-auto col-6">
+                <p class="mb-1 fw-bold text-secondary"><small>Border radius</small></p>
+                <label class="d-flex align-items-center form-label mb-sm-0" for="border-radius">
+                  <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
+                    id="border-radius" name="border-radius" value="0.25rem" placeholder="0.25rem"
+                    style="width: 80px;" />
+                </label>
+              </div>
+              <div class="col">
+                <div class="float-end">
+                  <p class="mb-1 fw-bold text-secondary"><small>Click & use</small></p>
+                  <a href="#download" id="download-btn" class="btn btn-primary text-nowrap">Scarica .css</a>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div id="custom-style">
+            <style>
+              :root {
+                --bs-primary: #9d33e7;
+                --bs-primary-rgb: 157, 51, 231;
+                --bs-secondary: #103875;
+                --bs-secondary-rgb: 16, 56, 117;
+                --bs-body-color: #212529;
+                --bs-body-color-rgb: 0, 0, 0;
+              }
+            </style>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     <div class="col-lg-8 mx-auto p-4 py-md-5">
       <div class="row">
@@ -102,81 +187,21 @@
         </div>
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col mt-5">
           <h3 class="text-primary">Crea direttamente il tuo file personalizzato:</h3>
         </div>
-      </div>
-      <div class="row sticky-bottom sticky-top z-3">
-        <div class="col">
-          <div class="my-2 p-3 bg-light border border-primary border-2 rounded-5 shadow-lg">
-            <form id="custom" class="" method="post" action="">
-              <div class="row">
-                <div class="col d-none d-sm-block">
-                  <p class="mb-1 fw-bold text-primary"><small>Prova in tempo reale</small></p>
-                  <h5 class="text-secondary">Imposta qui 👉</h5>
-                </div>
-                <div class="col-md-2 col-6">
-                  <p class="mb-1 fw-bold text-secondary"><small>Primary</small></p>
-                  <label class="d-flex align-items-center input-group form-label mb-sm-0" for="primary-color">
-                    <input type="color"
-                      class="float-start form-control form-control-color form-control-sm ms-1 bg-opacity-25"
-                      id="primary-color" name="primary-color" value="#9d33e7" style="max-width: 30px;" />
-                    <input class="form-control form-control-sm" type="text" value="#9d33e7" id="primary-color-code"
-                      style="max-width: 80px;" disabled readonly>
-                  </label>
-                </div>
-                <div class="col-sm-2 col-6">
-                  <p class="mb-1 fw-bold text-secondary"><small>Secondary</small></p>
-                  <label class="d-flex align-items-center input-group form-label mb-sm-0" for="secondary-color">
-                    <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
-                      id="secondary-color" name="secondary-color" value="#103875" style="max-width: 30px;" />
-                    <input class="form-control form-control-sm" type="text" value="#103875" id="secondary-color-code"
-                      style="max-width: 80px;" disabled readonly>
-                  </label>
-                </div>
-                <div class="col-md-2 col-6">
-                  <p class="mb-1 fw-bold text-secondary"><small>Font size</small></p>
-                  <label class="d-flex align-items-center form-label mb-sm-0" for="font-size">
-                    <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
-                      id="font-size" name="font-size" value="0.875rem" placeholder="0.875rem" style="width: 80px;" />
-                  </label>
-                </div>
-                <div class="col-md-2 col-6">
-                  <p class="mb-1 fw-bold text-secondary"><small>Border radius</small></p>
-                  <label class="d-flex align-items-center form-label mb-sm-0" for="border-radius">
-                    <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
-                      id="border-radius" name="border-radius" value="0.25rem" placeholder="0.25rem"
-                      style="width: 80px;" />
-                  </label>
-                </div>
-                <div class="col-auto">
-                  <p class="mb-1 fw-bold text-secondary"><small>Click & use</small></p>
-                  <a href="#download" id="download-btn" class="btn btn-primary text-nowrap">Scarica .css</a>
-                </div>
-              </div>
-            </form>
-            <div id="custom-style">
-              <style>
-                :root {
-                  --bs-primary: #9d33e7;
-                  --bs-primary-rgb: 157, 51, 231;
-                  --bs-secondary: #103875;
-                  --bs-secondary-rgb: 16, 56, 117;
-                }
-              </style>
-            </div>
-
-          </div>
-        </div>
-      </div>
+      </div> -->
 
       <div class="row g-5">
         <div class="col-sm-3">
           <div class="py-3 sticky-top z-2">
-            <hr class="col-1 my-5 opacity-0" />
+            <hr class="col-1 my-5 py-2 opacity-0" />
 
             <ul class="list ps-3">
+              <li>
+                <a class="icon-link mb-1" href="#s-typo">Typo</a>
+              </li>
               <li>
                 <a class="icon-link mb-1" href="#s-button">Button</a>
               </li>
@@ -224,6 +249,7 @@
           <h2 class="text-body-emphasis pt-5 mt-4">Esempi di Component</h2>
           <p>Di seguto puoi trovare alcuni esempi dei componenti Bootstrap con il nuovo stile.</p>
 
+          <div id="inc-typo"></div>
           <div id="inc-button"></div>
           <div id="inc-nav"></div>
           <div id="inc-tab"></div>

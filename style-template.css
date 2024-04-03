@@ -4,6 +4,8 @@
   /* --- Set your font family --- */
   --bs-font-sans-serif: {{FONT_FAMILY}};
   --bs-body-font-size: {{FONT_SIZE}};
+  --bs-body-color: {{FONT_COLOR}};
+  --bs-body-color-rgb: {{FONT_COLOR_RGB}};
 
   /* --- Set your primary and secondary color --- */
   --bs-primary: {{PRIMARY_COLOR}};

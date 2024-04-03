@@ -1,6 +1,8 @@
 const DEFAULT_FONT_FAMILY = '"Georama", sans-serif';
 const DEFAULT_PRIMARY_COLOR = '#9d33e7';
 const DEFAULT_SECONDARY_COLOR = '#103875';
+const DEFAULT_FONT_COLOR = '#212529';
+const DEFAULT_LINK_COLOR = '#FFFFFF';
 const CSS_FILENAME = 'style.css';
 const CSS_TEMPLATE_URL = '/style-template.css';
 
@@ -39,6 +41,18 @@ function getCustomSettings() {
   }
   const secondaryColorRgb = convertColorToRgb(secondaryColor);
 
+  let fontColor = document.getElementById('font-color').value;
+  if (fontColor === '') {
+    fontColor = DEFAULT_FONT_COLOR;
+  }
+  const fontColorRgb = convertColorToRgb(fontColor);
+
+  let linkColor = document.getElementById('link-color').value;
+  if (linkColor === '') {
+    linkColor = DEFAULT_FONT_COLOR;
+  }
+  const linkColorRgb = convertColorToRgb(linkColor);
+
   let borderRadius = document.getElementById('border-radius').value;
   if (borderRadius === '') {
     borderRadius = DEFAULT_BORDER_RADIUS;
@@ -53,6 +67,10 @@ function getCustomSettings() {
     primaryColorRgb,
     secondaryColor,
     secondaryColorRgb,
+    fontColor,
+    fontColorRgb,
+    linkColor,
+    linkColorRgb,
     borderRadius,
     fontSize,
   };
@@ -73,13 +91,17 @@ async function handleDownloadButtonClick(event) {
 
 function replaceCustomSettings(
   template,
-  { primaryColor, primaryColorRgb, secondaryColor, secondaryColorRgb, borderRadius, fontSize }
+  { primaryColor, primaryColorRgb, secondaryColor, secondaryColorRgb, linkColor, linkColorRgb, fontColor, fontColorRgb, borderRadius, fontSize }
 ) {
   return template
     .replace(/{{PRIMARY_COLOR}}/g, primaryColor)
     .replace(/{{PRIMARY_COLOR_RGB}}/g, primaryColorRgb)
     .replace(/{{SECONDARY_COLOR}}/g, secondaryColor)
     .replace(/{{SECONDARY_COLOR_RGB}}/g, secondaryColorRgb)
+    .replace(/{{FONT_COLOR}}/g, fontColor)
+    .replace(/{{LINK_COLOR_RGB}}/g, linkColorRgb)
+    .replace(/{{LINK_COLOR}}/g, linkColor)
+    .replace(/{{FONT_COLOR_RGB}}/g, fontColorRgb)
     .replace(/{{BORDER_RADIUS}}/g, borderRadius)
     .replace(/{{FONT_FAMILY}}/g, DEFAULT_FONT_FAMILY)
     .replace(/{{FONT_SIZE}}/g, fontSize);
@@ -93,6 +115,11 @@ function handleCustomStyleChange() {
       --bs-primary-rgb: {{PRIMARY_COLOR_RGB}};
       --bs-secondary: {{SECONDARY_COLOR}};
       --bs-secondary-rgb: {{SECONDARY_COLOR_RGB}};
+      --bs-body-color: {{FONT_COLOR}};
+      --bs-body-color-rgb: {{FONT_COLOR_RGB}};
+      --bs-btn-color: {{LINK_COLOR}};
+      --bs-btn-color-rgb: {{LINK_COLOR_RGB}};
+      --bs-body-font-size: {{FONT_SIZE}};
       --bs-border-radius: {{BORDER_RADIUS}};
     }
     </style>`;
@@ -100,6 +127,8 @@ function handleCustomStyleChange() {
 
   document.getElementById('primary-color-code').value = customSettings.primaryColor;
   document.getElementById('secondary-color-code').value = customSettings.secondaryColor;
+  document.getElementById('font-color-code').value = customSettings.fontColor;
+  document.getElementById('link-color-code').value = customSettings.fontColor;
   document.getElementById('custom-style').innerHTML = customCss;
 }
 
@@ -123,6 +152,7 @@ window.onload = () => {
   includePageElement('inc-offcanvas', '/inc/offcanvas.html');
   includePageElement('inc-modal', '/inc/modal.html');
   includePageElement('inc-image', '/inc/image.html');
+  includePageElement('inc-typo', '/inc/typo.html');
 
   // bindings
   document.getElementById('download-btn').addEventListener('click', handleDownloadButtonClick);
