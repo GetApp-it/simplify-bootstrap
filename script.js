@@ -142,7 +142,7 @@ function includePageElement(elementId, template) {
 
 window.onload = () => {
   // Load page elements
-  includePageElement('inc-nav', '/inc/nav.html');
+  includePageElement('inc-nav', 'inc/nav.html');
   includePageElement('inc-tab', '/inc/tab.html');
   includePageElement('inc-button', '/inc/button.html');
   includePageElement('inc-form', '/inc/form.html');
