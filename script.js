@@ -91,7 +91,18 @@ async function handleDownloadButtonClick(event) {
 
 function replaceCustomSettings(
   template,
-  { primaryColor, primaryColorRgb, secondaryColor, secondaryColorRgb, linkColor, linkColorRgb, fontColor, fontColorRgb, borderRadius, fontSize }
+  {
+    primaryColor,
+    primaryColorRgb,
+    secondaryColor,
+    secondaryColorRgb,
+    linkColor,
+    linkColorRgb,
+    fontColor,
+    fontColorRgb,
+    borderRadius,
+    fontSize,
+  }
 ) {
   return template
     .replace(/{{PRIMARY_COLOR}}/g, primaryColor)
@@ -143,16 +154,16 @@ function includePageElement(elementId, template) {
 window.onload = () => {
   // Load page elements
   includePageElement('inc-nav', 'inc/nav.html');
-  includePageElement('inc-tab', '/inc/tab.html');
-  includePageElement('inc-button', '/inc/button.html');
-  includePageElement('inc-form', '/inc/form.html');
-  includePageElement('inc-alert', '/inc/alert.html');
-  includePageElement('inc-table', '/inc/table.html');
-  includePageElement('inc-accordion', '/inc/accordion.html');
-  includePageElement('inc-offcanvas', '/inc/offcanvas.html');
-  includePageElement('inc-modal', '/inc/modal.html');
-  includePageElement('inc-image', '/inc/image.html');
-  includePageElement('inc-typo', '/inc/typo.html');
+  includePageElement('inc-tab', 'inc/tab.html');
+  includePageElement('inc-button', 'inc/button.html');
+  includePageElement('inc-form', 'inc/form.html');
+  includePageElement('inc-alert', 'inc/alert.html');
+  includePageElement('inc-table', 'inc/table.html');
+  includePageElement('inc-accordion', 'inc/accordion.html');
+  includePageElement('inc-offcanvas', 'inc/offcanvas.html');
+  includePageElement('inc-modal', 'inc/modal.html');
+  includePageElement('inc-image', 'inc/image.html');
+  includePageElement('inc-typo', 'inc/typo.html');
 
   // bindings
   document.getElementById('download-btn').addEventListener('click', handleDownloadButtonClick);
