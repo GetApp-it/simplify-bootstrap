@@ -7,6 +7,7 @@
   <meta name="description" content="An alternative simple and elegant Bōōtstrāp way!" />
   <meta name="author" content="Marco Gargano" />
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <meta name="theme-color" content="#ff0095" />
   <title>Simplify Bōōtstrāp - v. 0.1</title>
   <link rel="stylesheet" href="style.css" />
   <style>
@@ -16,14 +17,14 @@
   </style>
 </head>
 
-<body>
-  <main>
+<body class="bg-primary">
+  <main class="bg-white">
     <div class="bg-primary bg-gradient">
       <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-row align-items-center justify-content-center g-5 py-5 min-vh-100">
           <div class="col-lg-8 text-white py-5">
-            <h1 id="try" class="display-5 fw-bold lh-1 mb-3">This.. is... Bōōtstrāp!</h1>
-            <h5 class="lead">Ora semplice ed elegante</h5>
+            <h1 id="try" class="display-4 mb-3">This.. is... Bōōtstrāp!</h1>
+            <h5 class="lea fw-medium">Ora semplice ed elegante</h5>
             <hr class="border-secondary border-2 opacity-100 col-md-2 my-5">
             <h3>Personalizza Bootstrap <br>con un approccio moderno.</h3>
             <h4 class="mb-3 text-secondary">Genera il tuo file CSS personalizzato.</h4>
@@ -53,94 +54,100 @@
     <div class="container sticky-bottom sticky-top z-3">
       <div class="col p-2 mx-auto">
         <div class="p-3 bg-light border border-primary border-2 rounded-5 shadow-lg">
-          <form id="custom" class="" method="post" action="">
-            <div class="row d-flex justify-content-evenly">
-              <div class="col d-none d-sm-block">
-                <p class="mb-1 fw-bold text-primary"><small>Real time</small></p>
-                <h5 class="text-secondary">Prova 👉</h5>
-              </div>
-              <div class="col-md-auto col-6">
-                <p class="mb-1 fw-bold text-secondary"><small>Primary</small></p>
-                <label class="d-flex align-items-center input-group form-label mb-sm-0" for="primary-color">
-                  <input type="color"
-                    class="float-start form-control form-control-color form-control-sm ms-1 bg-opacity-25"
-                    id="primary-color" name="primary-color" value="#9d33e7" style="max-width: 30px;" />
-                  <input class="form-control form-control-sm" type="text" value="#9d33e7" id="primary-color-code"
-                    style="max-width: 95px;" disabled readonly>
-                </label>
-              </div>
-              <div class="col-sm-auto col-6">
-                <p class="mb-1 fw-bold text-secondary"><small>Secondary</small></p>
-                <label class="d-flex align-items-center input-group form-label mb-sm-0" for="secondary-color">
-                  <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
-                    id="secondary-color" name="secondary-color" value="#103875" style="max-width: 30px;" />
-                  <input class="form-control form-control-sm" type="text" value="#103875" id="secondary-color-code"
-                    style="max-width: 95px;" disabled readonly>
-                </label>
-              </div>
-              <div class="col-sm-auto col-6">
-                <p class="mb-1 fw-bold text-secondary"><small>Font color</small></p>
-                <label class="d-flex align-items-center input-group form-label mb-sm-0" for="font-color">
-                  <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
-                    id="font-color" name="font-color" value="#212529" style="max-width: 30px;" />
-                  <input class="form-control form-control-sm" type="text" value="#212529" id="font-color-code"
-                    style="max-width: 95px;" disabled readonly>
-                </label>
-              </div>
-              <div class="col-sm-auto col-6">
-                <p class="mb-1 fw-bold text-secondary"><small>Link color</small></p>
-                <label class="d-flex align-items-center input-group form-label mb-sm-0" for="link-color">
-                  <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
-                    id="link-color" name="link-color" value="#FFFFFF" style="max-width: 30px;" />
-                  <input class="form-control form-control-sm" type="text" value="#FFFFFF" id="link-color-code"
-                    style="max-width: 95px;" disabled readonly>
-                </label>
-              </div>
-              <div class="col-sm-auto col-6">
-                <p class="mb-1 fw-bold text-secondary"><small>Font size</small></p>
-                <label class="d-flex align-items-center form-label mb-sm-0" for="font-size">
-                  <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
-                    id="font-size" name="font-size" value="0.875rem" placeholder="0.875rem" style="width: 80px;" />
-                </label>
-              </div>
-              <div class="col-sm-auto col-6">
-                <p class="mb-1 fw-bold text-secondary"><small>Font family</small></p>
-                <select class="float-start form-select form-select-color form-select-sm ms-1<" id="font-family" name="font-family">
-                  <option value="georama">Georama</option>
-                  <option value="playfair">Playfair</option>
-                  <option value="arvo">Arvo</option>
-                  <option value="montserrat">Montserrat</option>
-                </select>
-              </div>
-              <div class="col-sm-auto col-6">
-                <p class="mb-1 fw-bold text-secondary"><small>Border radius</small></p>
-                <label class="d-flex align-items-center form-label mb-sm-0" for="border-radius">
-                  <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
-                    id="border-radius" name="border-radius" value="0.25rem" placeholder="0.25rem"
-                    style="width: 80px;" />
-                </label>
-              </div>
-              <div class="col">
-                <div class="float-end">
-                  <p class="mb-1 fw-bold text-secondary"><small>Click & use</small></p>
-                  <a href="#download" id="download-btn" class="btn btn-primary text-nowrap">Scarica .css</a>
+          <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#customToggle" aria-controls="customToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <strong class="h5"><span class="me-2">三</span> Prova in tempo reale</strong>
+          </button>
+          <div class="collapse d-md-block" id="customToggle">
+            <hr class="d-sm-block d-md-none my-4">
+            <form id="custom" class="" method="post" action="">
+              <div class="row d-flex justify-content-evenly">
+                <div class="col d-none d-sm-block">
+                  <p class="mb-1 fw-bold text-primary"><small>Real time</small></p>
+                  <h5 class="text-secondary">Prova 👉</h5>
+                </div>
+                <div class="col-md-auto col-6">
+                  <p class="mb-1 fw-bold text-secondary"><small>Primary</small></p>
+                  <label class="d-flex align-items-center input-group form-label mb-sm-0" for="primary-color">
+                    <input type="color"
+                      class="float-start form-control form-control-color form-control-sm ms-1 bg-opacity-25"
+                      id="primary-color" name="primary-color" value="#ff0095" style="max-width: 30px;" />
+                    <input class="form-control form-control-sm" type="text" value="#ff0095" id="primary-color-code"
+                      style="max-width: 95px;" disabled readonly>
+                  </label>
+                </div>
+                <div class="col-sm-auto col-6">
+                  <p class="mb-1 fw-bold text-secondary"><small>Secondary</small></p>
+                  <label class="d-flex align-items-center input-group form-label mb-sm-0" for="secondary-color">
+                    <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
+                      id="secondary-color" name="secondary-color" value="#94105d" style="max-width: 30px;" />
+                    <input class="form-control form-control-sm" type="text" value="#94105d" id="secondary-color-code"
+                      style="max-width: 95px;" disabled readonly>
+                  </label>
+                </div>
+                <div class="col-sm-auto col-6">
+                  <p class="mb-1 fw-bold text-secondary"><small>Font color</small></p>
+                  <label class="d-flex align-items-center input-group form-label mb-sm-0" for="font-color">
+                    <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
+                      id="font-color" name="font-color" value="#4e6274" style="max-width: 30px;" />
+                    <input class="form-control form-control-sm" type="text" value="#4e6274" id="font-color-code"
+                      style="max-width: 95px;" disabled readonly>
+                  </label>
+                </div>
+                <div class="col-sm-auto col-6">
+                  <p class="mb-1 fw-bold text-secondary"><small>Link color</small></p>
+                  <label class="d-flex align-items-center input-group form-label mb-sm-0" for="link-color">
+                    <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
+                      id="link-color" name="link-color" value="#FFFFFF" style="max-width: 30px;" />
+                    <input class="form-control form-control-sm" type="text" value="#FFFFFF" id="link-color-code"
+                      style="max-width: 95px;" disabled readonly>
+                  </label>
+                </div>
+                <div class="col-sm-auto col-6">
+                  <p class="mb-1 fw-bold text-secondary"><small>Font size</small></p>
+                  <label class="d-flex align-items-center form-label mb-sm-0" for="font-size">
+                    <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
+                      id="font-size" name="font-size" value="0.875rem" placeholder="0.875rem" style="width: 80px;" />
+                  </label>
+                </div>
+                <div class="col-sm-auto col-6">
+                  <p class="mb-1 fw-bold text-secondary"><small>Font family</small></p>
+                  <select class="float-start form-select form-select-color form-select-sm ms-1<" id="font-family" name="font-family">
+                    <option value="georama">Georama</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Cursive">Cursive</option>
+                    <option value="Courier New">Courier</option>
+                  </select>
+                </div>
+                <div class="col-sm-auto col-6">
+                  <p class="mb-1 fw-bold text-secondary"><small>Border radius</small></p>
+                  <label class="d-flex align-items-center form-label mb-sm-0" for="border-radius">
+                    <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
+                      id="border-radius" name="border-radius" value="0.25rem" placeholder="0.25rem"
+                      style="width: 80px;" />
+                  </label>
+                </div>
+                <div class="col">
+                  <div class="float-end">
+                    <p class="mb-1 fw-bold text-secondary"><small>Click & use</small></p>
+                    <a href="#download" id="download-btn" class="btn btn-primary text-nowrap">Scarica .css</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
           <div id="custom-style">
             <style>
               :root {
-                --bs-primary: #9d33e7;
-                --bs-primary-rgb: 157, 51, 231;
-                --bs-secondary: #103875;
-                --bs-secondary-rgb: 16, 56, 117;
-                --bs-body-color: #212529;
-                --bs-body-color-rgb: 0, 0, 0;
+                --bs-primary: #ff0095;
+                --bs-primary-rgb: 255, 0, 149;
+                --bs-secondary: #94105d;
+                --bs-secondary-rgb: 148, 16, 93;
+                --bs-body-color: #4e6274;
+                --bs-body-color-rgb: 78, 98, 116;
               }
             </style>
           </div>
-
         </div>
       </div>
     </div>
@@ -167,16 +174,20 @@
           <p class="mb-2">Tutto ciò che ti servirà impostare per un rapida personalizzazione lo trovi subito all'interno
             del file CSS. Senza dover compilare nulla e pronto all'anteprima. <strong>Poche e chiare variabili declinate
               per diversi utilizzi.</strong> </p>
-          <pre class="bg-secondary bg-opacity-10 p-3 rounded-5 mb-3"><code>@import url("font/font.css");
+          <pre class="bg-secondary bg-opacity-10 text-black p-3 rounded-5 mb-3"><code>@import url("font/font.css");
 
 :root {
   /* --- Set your font family --- */
-  --bs-font-sans-serif: "Georama", sans-serif;
+  --bs-font-sans-serif: "Georama", Arial, sans-serif;
   --bs-body-font-size: 0.875rem;
+  --bs-body-color: #212529;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-color-rgb: var(--bs-white-rgb);
 
   /* --- Set your primary and secondary color --- */
-  --bs-primary: #9d33e7;
-  --bs-primary-rgb: 157, 51, 231;
+  --bs-primary: #ff0095;
+  --bs-primary-rgb: 255, 0, 149;
   --bs-secondary: #103875;
   --bs-secondary-rgb: 16, 56, 117;
 
@@ -186,7 +197,7 @@
 
           <p class="mb-2">Scarica e inserisci nella head del tuo progetto il file CSS di seguito.</p>
           <p class="mb-2">
-            <pre class="bg-secondary bg-opacity-10 p-3 rounded-5"><code><textarea class="w-100 bg-transparent border-0 p-0 m-0" style="resize: none; outline: none;" rows="1"><link rel="stylesheet" href="style.css" /></textarea></code></pre>
+            <pre class="bg-secondary bg-opacity-10 text-black p-3 rounded-5"><code><textarea class="w-100 bg-transparent border-0 p-0 m-0" style="resize: none; outline: none;" rows="1"><link rel="stylesheet" href="style.css" /></textarea></code></pre>
             <!-- <input class="form-control bg-secondary bg-opacity-10 p-3 rounded-5 border-0" type="text"
               readonly disabled value='<link rel="stylesheet" href="style.css" />'> -->
             </p>
