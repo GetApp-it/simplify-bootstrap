@@ -62,6 +62,11 @@ function getCustomSettings() {
   if (fontSize === '') {
     fontSize = DEFAULT_FONT_SIZE;
   }
+
+  let fontFamily = document.getElementById('font-family').value;
+  if (fontFamily === '') {
+    fontFamily = DEFAULT_FONT_FAMILY;
+  }
   return {
     primaryColor,
     primaryColorRgb,
@@ -73,6 +78,7 @@ function getCustomSettings() {
     linkColorRgb,
     borderRadius,
     fontSize,
+    fontFamily,
   };
 }
 
@@ -102,6 +108,7 @@ function replaceCustomSettings(
     fontColorRgb,
     borderRadius,
     fontSize,
+    fontFamily,
   }
 ) {
   return template
@@ -114,7 +121,7 @@ function replaceCustomSettings(
     .replace(/{{LINK_COLOR}}/g, linkColor)
     .replace(/{{FONT_COLOR_RGB}}/g, fontColorRgb)
     .replace(/{{BORDER_RADIUS}}/g, borderRadius)
-    .replace(/{{FONT_FAMILY}}/g, DEFAULT_FONT_FAMILY)
+    .replace(/{{FONT_FAMILY}}/g, fontFamily)
     .replace(/{{FONT_SIZE}}/g, fontSize);
 }
 
@@ -122,6 +129,7 @@ function handleCustomStyleChange() {
   const customSettings = getCustomSettings();
   const cssTemplate = `<style> 
     :root {
+      --bs-font-sans-serif: {{FONT_FAMILY}};
       --bs-primary: {{PRIMARY_COLOR}};
       --bs-primary-rgb: {{PRIMARY_COLOR_RGB}};
       --bs-secondary: {{SECONDARY_COLOR}};
@@ -139,7 +147,7 @@ function handleCustomStyleChange() {
   document.getElementById('primary-color-code').value = customSettings.primaryColor;
   document.getElementById('secondary-color-code').value = customSettings.secondaryColor;
   document.getElementById('font-color-code').value = customSettings.fontColor;
-  document.getElementById('link-color-code').value = customSettings.fontColor;
+  document.getElementById('link-color-code').value = customSettings.linkColor;
   document.getElementById('custom-style').innerHTML = customCss;
 }
 
