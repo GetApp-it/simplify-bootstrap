@@ -4,7 +4,7 @@ const DEFAULT_SECONDARY_COLOR = '#103875';
 const DEFAULT_FONT_COLOR = '#212529';
 const DEFAULT_LINK_COLOR = '#FFFFFF';
 const CSS_FILENAME = 'style.css';
-const CSS_TEMPLATE_URL = '/style-template.css';
+const CSS_TEMPLATE_URL = 'style-template.css';
 
 function download(filename, text) {
   var element = document.createElement('a');
