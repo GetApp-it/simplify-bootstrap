@@ -1,13 +1,9 @@
 <h3 id="s-form" class="py-3">Form</h3>
 <p class="mb-5">Documentazione su <a href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank">Bootstrap</a>.</p>
 
-<div class="form-floating mb-3">
+  <div class="form-floating mb-3">
     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
     <label for="floatingInput">Email address</label>
-  </div>
-  <div class="form-floating mb-3">
-    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
-    <label for="floatingPassword">Password</label>
   </div>
   <div class="form-floating mb-3">
     <select class="form-select" id="floatingSelectGrid" aria-placeholder="Open this select menu">
@@ -17,6 +13,13 @@
       <option value="3">Three</option>
     </select>
     <label for="floatingSelectGrid">Works with selects</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control is-valid" id="floatingInput" placeholder="Marco Polo" value="Marco Polo" />
+    <label for="floatingInput">Name and surname</label>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
   </div>
   <fieldset class="row mb-3">
     <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
@@ -32,11 +35,25 @@
     </div>
   </fieldset>
   <div class="row mb-3">
-    <div class="col-sm-10 offset-sm-2">
+    <legend class="col-form-label col-sm-2 pt-0">Checkbox</legend>
+    <div class="col-sm-10">
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1" />
-        <label class="form-check-label" for="gridCheck1"> Example checkbox </label>
+        <input class="form-check-input" type="checkbox" id="gridCheck1" checked />
+        <label class="form-check-label" for="gridCheck1"> First checkbox </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck2" />
+        <label class="form-check-label" for="gridCheck2"> Second checkbox </label>
       </div>
     </div>
   </div>
+  <div class="row mb-3">
+    <legend class="col-form-label col-sm-2 pt-0">Range</legend>
+    <div class="col-sm-6">
+      <div class="form-check">
+        <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+      </div>
+    </div>
+  </div>
+
   <button type="submit" class="btn btn-primary">Sign in</button>

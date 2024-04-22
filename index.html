@@ -60,13 +60,13 @@
           <div class="collapse d-md-block" id="customToggle">
             <hr class="d-sm-block d-md-none my-4">
             <form id="custom" class="" method="post" action="">
-              <div class="row d-flex justify-content-evenly">
-                <div class="col d-none d-sm-block">
-                  <p class="mb-1 fw-bold text-primary"><small>Real time</small></p>
-                  <h5 class="text-secondary">Prova 👉</h5>
+              <div class="row d-flex">
+                <div class="col-auto d-none d-sm-block">
+                  <p class="mb-1 fw-bold text-primary"><small>Prova</small></p>
+                  <h5 class="text-secondary"> 👉</h5>
                 </div>
                 <div class="col-md-auto col-6">
-                  <p class="mb-1 fw-bold text-secondary"><small>Primary</small></p>
+                  <p class="mb-1 fw-bold text-secondary"><small>Primary color</small></p>
                   <label class="d-flex align-items-center input-group form-label mb-sm-0" for="primary-color">
                     <input type="color"
                       class="float-start form-control form-control-color form-control-sm ms-1 bg-opacity-25"
@@ -76,7 +76,7 @@
                   </label>
                 </div>
                 <div class="col-sm-auto col-6">
-                  <p class="mb-1 fw-bold text-secondary"><small>Secondary</small></p>
+                  <p class="mb-1 fw-bold text-secondary"><small>Secondary color</small></p>
                   <label class="d-flex align-items-center input-group form-label mb-sm-0" for="secondary-color">
                     <input type="color" class="float-start form-control form-control-color form-control-sm ms-1"
                       id="secondary-color" name="secondary-color" value="#94105d" style="max-width: 30px;" />
@@ -103,15 +103,8 @@
                   </label>
                 </div>
                 <div class="col-sm-auto col-6">
-                  <p class="mb-1 fw-bold text-secondary"><small>Font size</small></p>
-                  <label class="d-flex align-items-center form-label mb-sm-0" for="font-size">
-                    <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
-                      id="font-size" name="font-size" value="0.875rem" placeholder="0.875rem" style="width: 80px;" />
-                  </label>
-                </div>
-                <div class="col-sm-auto col-6">
                   <p class="mb-1 fw-bold text-secondary"><small>Font family</small></p>
-                  <select class="float-start form-select form-select-color form-select-sm ms-1<" id="font-family" name="font-family">
+                  <select class="form-select form-select-color form-select-sm ms-1<" id="font-family" name="font-family">
                     <option value="georama">Georama</option>
                     <option value="Arial">Arial</option>
                     <option value="Georgia">Georgia</option>
@@ -120,11 +113,22 @@
                   </select>
                 </div>
                 <div class="col-sm-auto col-6">
+                  <p class="mb-1 fw-bold text-secondary"><small>Font size</small></p>
+                  <label class="d-flex align-items-center form-label mb-sm-0" for="font-size">
+                    <!-- <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
+                      id="font-size" name="font-size" value="0.875rem" placeholder="0.875rem" style="width: 80px;" /> -->
+                    <input class="form-range" type="range" id="font-size" name="font-size" min="0.7" max="1.6" step="0.05" value="0.9" style="width: 100px" oninput="this.nextElementSibling.value = this.value" />
+                    <output class="ms-1 text-end" style="width: 40px;">0.9</output>rem
+                  </label>
+                </div>
+                <div class="col-sm-auto col-6">
                   <p class="mb-1 fw-bold text-secondary"><small>Border radius</small></p>
                   <label class="d-flex align-items-center form-label mb-sm-0" for="border-radius">
-                    <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
+                    <!-- <input type="text" class="float-start form-control form-control-color form-control-sm ms-1"
                       id="border-radius" name="border-radius" value="0.25rem" placeholder="0.25rem"
-                      style="width: 80px;" />
+                      style="width: 80px;" /> -->
+                    <input class="form-range" type="range" id="border-radius" name="border-radius" min="0" max="2" step="0.2" value="0.4" style="width: 100px;" oninput="this.nextElementSibling.value = this.value" />
+                    <output class="ms-1 text-end" style="width: 40px;">0.4</output>rem
                   </label>
                 </div>
                 <div class="col">
@@ -208,21 +212,24 @@
   --bs-border-radius: 0.25rem;
 }</code></pre>
 
-          <p class="mb-2">Scarica e inserisci nella head del tuo progetto il file CSS di seguito.</p>
-          <p class="mb-2">
+<p class="mb-2">Facile da mantenere o modificare in seguito, semplicemnte modificando le variabili native presenti in cima al file CSS.</p>
+
+<h5 class="mt-5">Come usarlo</h5>
+<p class="mb-2">Scarica e inserisci nella head del tuo progetto il file CSS di seguito.</p>
+<p class="mb-2">
             <pre class="bg-secondary bg-opacity-10 text-black p-3 rounded-5"><code><textarea class="w-100 bg-transparent border-0 p-0 m-0" style="resize: none; outline: none;" rows="1"><link rel="stylesheet" href="style.css" /></textarea></code></pre>
             <!-- <input class="form-control bg-secondary bg-opacity-10 p-3 rounded-5 border-0" type="text"
               readonly disabled value='<link rel="stylesheet" href="style.css" />'> -->
             </p>
 
-          <div class="mt-3 mb-5">
+          <div class="mt-3 mb-4">
             <div class="float-end mb-3">
               <small>Basato su <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
                   title="Bootstrap v. 5.3" target="_blank">Bootstrap v. 5.3</a></small>
             </div>
             <a href="style.css" download="" class="btn btn-outline-primary">Scarica il file CSS di partenza</a>
           </div>
-          <p class="mb-2">Includi il file JS di Bootstrap per le funzionalità javascript.</p>
+          <p class="mb-2">Includi il file JS di Bootstrap per le funzionalità javascript (accordion, modal...).</p>
           <div class="mb-5">
             <pre class="bg-secondary bg-opacity-10 text-black p-3 rounded-5"><code><textarea class="w-100 bg-transparent border-0 p-0 m-0 text-nowrap" style="resize: none; outline: none;" rows="1"><script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script></textarea></code></pre>
           </div>

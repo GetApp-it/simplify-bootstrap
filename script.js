@@ -138,8 +138,8 @@ function handleCustomStyleChange() {
       --bs-body-color-rgb: {{FONT_COLOR_RGB}};
       --bs-btn-color: {{LINK_COLOR}};
       --bs-btn-color-rgb: {{LINK_COLOR_RGB}};
-      --bs-body-font-size: {{FONT_SIZE}};
-      --bs-border-radius: {{BORDER_RADIUS}};
+      --bs-body-font-size: {{FONT_SIZE}}rem;
+      --bs-border-radius: {{BORDER_RADIUS}}rem;
     }
     </style>`;
   const customCss = replaceCustomSettings(cssTemplate, customSettings);
