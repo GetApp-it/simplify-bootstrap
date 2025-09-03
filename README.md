@@ -1,4 +1,4 @@
-![image](https://simplify-bootstrap.github.io/simplify-bootstrap/img/share.jpg)
+![image](https://simplify-bootstrap.github.io/img/share.jpg)
 
 # This.. is... Bōōtstrāp!
 ### Now simple and elegant
