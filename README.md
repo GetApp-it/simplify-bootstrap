@@ -41,4 +41,4 @@ Primary color, Secondary color, Font color, Link color, Font family, Font size, 
 
 ---
 
-**[🤓 Support the dev](https://paypal.me/MarcoGargano/10)**
+**[🤓 Support the dev](https://paypal.me/MarcoGargano/5)**
