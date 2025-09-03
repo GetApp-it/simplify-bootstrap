@@ -1,6 +1,6 @@
 ![image](https://simplify-bootstrap.github.io/img/share.jpg)
 
-# This.. is... Bōōtstrāp!
+# Simplify Bootstrap!
 ### Now simple and elegant
 
 Customize Bootstrap 5 with a modern approach.
