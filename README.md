@@ -1,9 +1,9 @@
 ![image](https://simplify-bootstrap.github.io/img/share.jpg)
 
 # Simplify Bootstrap!
-### Now simple and elegant
+### Free Bootstrap 5.3 Builder, simple and elegant
 
-Customize Bootstrap 5 with a modern approach.
+Customize Bootstrap 5.3.3 with a modern approach.
 Generate and download your custom CSS file.
 
 **[👉 TRY NOW 👈](https://simplify-bootstrap.github.io/)**
