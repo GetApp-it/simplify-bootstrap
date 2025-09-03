@@ -1,4 +1,4 @@
-![image](https://getapp-it.github.io/simplify-bootstrap/img/share.jpg)
+![image](https://simplify-bootstrap.github.io/simplify-bootstrap/img/share.jpg)
 
 # This.. is... Bōōtstrāp!
 ### Now simple and elegant
@@ -6,7 +6,7 @@
 Customize Bootstrap 5 with a modern approach.
 Generate and download your custom CSS file.
 
-**[👉 TRY NOW 👈](https://getapp-it.github.io/simplify-bootstrap/)**
+**[👉 TRY NOW 👈](https://simplify-bootstrap.github.io/)**
 
 > CSS Variables, No Compile, Bootstrap Classes
 
