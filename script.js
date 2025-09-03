@@ -1,4 +1,4 @@
-const DEFAULT_FONT_FAMILY = '"Georama", sans-serif';
+const DEFAULT_FONT_FAMILY = 'Arial, sans-serif';
 const DEFAULT_FONT_SIZE = '0.85';
 const DEFAULT_PRIMARY_COLOR = '#9d33e7';
 const DEFAULT_SECONDARY_COLOR = '#103875';
